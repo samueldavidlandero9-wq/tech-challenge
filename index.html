@@ -1,0 +1,129 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Challenge</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- PANTALLA DE INICIO -->
+    <div id="inicio" class="pantalla">
+
+        <div class="inicio-box">
+            <div class="icono">💻</div>
+
+            <h1>TECH CHALLENGE</h1>
+
+            <p class="subtitulo">
+                El reto de tecnología
+            </p>
+
+            <p>
+                Pon a prueba tus conocimientos sobre
+                computadoras, software, internet y tecnología.
+            </p>
+
+            <p class="creadores">
+                Proyecto realizado por estudiantes de 6.º, 7.º y 9.º
+            </p>
+
+            <button onclick="iniciarJuego()">
+                🚀 INICIAR
+            </button>
+        </div>
+
+    </div>
+
+
+    <!-- JUEGO -->
+    <div id="juego" class="pantalla oculto">
+
+        <header>
+
+            <h1>💻 TECH CHALLENGE</h1>
+
+            <div class="datos">
+                <span>❤️ Vidas: <b id="vidas">3</b></span>
+                <span>⭐ Puntos: <b id="puntos">0</b></span>
+            </div>
+
+        </header>
+
+
+        <main>
+
+            <div class="progreso">
+                Pregunta <span id="numeroPregunta">1</span>
+            </div>
+
+            <div class="pregunta-box">
+
+                <div id="iconoPregunta" class="icono-pregunta">
+                    💻
+                </div>
+
+                <h2 id="pregunta">
+                    ¿Qué es un sistema operativo?
+                </h2>
+
+            </div>
+
+
+            <div id="respuestas" class="respuestas">
+
+                <button onclick="responder(0)">Respuesta 1</button>
+
+                <button onclick="responder(1)">Respuesta 2</button>
+
+                <button onclick="responder(2)">Respuesta 3</button>
+
+                <button onclick="responder(3)">Respuesta 4</button>
+
+            </div>
+
+
+            <div id="mensaje" class="mensaje"></div>
+
+        </main>
+
+    </div>
+
+
+    <!-- PANTALLA FINAL -->
+    <div id="final" class="pantalla oculto">
+
+        <div class="final-box">
+
+            <div class="trofeo">🏆</div>
+
+            <h1>¡JUEGO TERMINADO!</h1>
+
+            <p>Tu puntuación fue:</p>
+
+            <div id="puntuacionFinal" class="puntuacion">
+                0
+            </div>
+
+            <p id="mensajeFinal">
+                ¡Buen trabajo!
+            </p>
+
+            <button onclick="volverAJugar()">
+                🔄 VOLVER A JUGAR
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
